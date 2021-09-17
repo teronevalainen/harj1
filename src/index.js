@@ -18,11 +18,11 @@ function initializeCode() {
 
   addTextButton.addEventListener("click", function () {
     var txtVal = document.getElementById("teksti").value,
-      listaNode = document.getElementById("lista"),
-      lNode = document.createElement("Lst"),
+      listNode = document.getElementById("lista"),
+      liNode = document.createElement("LI"),
       txtNode = document.createTextNode(txtVal);
 
-    lNode.appendChild(txtNode);
-    listaNode.appendChild(lNode);
+    liNode.appendChild(txtNode);
+    listNode.appendChild(liNode);
   });
 }
