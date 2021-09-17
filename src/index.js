@@ -1,10 +1,28 @@
 import "./styles.css";
 
 document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
+<h1>Harjotus 1</h1>
 `;
+
+if (document.readyState !== "loading") {
+  console.log("Document is ready");
+  initializeCode();
+} else {
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Document ready after waiting");
+  });
+}
+
+function initializeCode() {
+  const addTextButton = document.getElementById("add-comment");
+
+  addTextButton.addEventListener("click", function () {
+    var txtVal = document.getElementById("teksti").value,
+      listaNode = document.getElementById("lista"),
+      lNode = document.createElement("Lst"),
+      txtNode = document.createTextNode(txtVal);
+
+    lNode.appendChild(txtNode);
+    listaNode.appendChild(lNode);
+  });
+}
