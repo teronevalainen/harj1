@@ -1,9 +1,9 @@
 body {
   font-family: Garamond;
 }
-header {
+.header {
   font-style: italic;
 }
-menu-table {
+#menu-table {
   text-align: left;
 }
