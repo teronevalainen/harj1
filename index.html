@@ -7,9 +7,10 @@
 
   <body>
     <div id="app"></div>
-    <h1>Hello World</h1>
-
-    <table border="1">
+    <header class="header">
+      <h1>MENU</h1>
+    </header>
+    <table name="menu-table" border="1">
       <tbody>
         <tr>
           <th>Name</th>
@@ -38,14 +39,23 @@
       </tbody>
     </table>
 
-    <input type="text" id="teksti" />
-    <ul id="lista">
-      <button id="add-comment">add-comment</button>
-      <li>Meal 1</li>
-      <li>Meal 2</li>
-      <li>Meal 3</li>
-    </ul>
+    <main>
+      <ul id="lista">
+        <li>Meal 1</li>
+        <li>Meal 2</li>
+        <li>Meal 3</li>
+      </ul>
 
+      <div id="menu-controls">
+        <label for="teksti">New meal item</label>
+        <textarea name="teksti" id="teksti" cols="30" rows="10"></textarea>
+        <!--<input type="checkbox" name="comm"> this is very important item</input>-->
+        <button id="add-comment">add-comment</button>
+      </div>
+    </main>
+    <header class="header">
+      <h2>Reviews</h2>
+    </header>
     <script src="src/index.js"></script>
   </body>
 </html>

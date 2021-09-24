@@ -17,12 +17,13 @@ function initializeCode() {
   const addTextButton = document.getElementById("add-comment");
 
   addTextButton.addEventListener("click", function () {
-    var txtVal = document.getElementById("teksti").value,
-      listNode = document.getElementById("lista"),
-      liNode = document.createElement("LI"),
-      txtNode = document.createTextNode(txtVal);
+    const txtVal = document.getElementById("teksti");
+    const listNode = document.getElementById("lista");
 
-    liNode.appendChild(txtNode);
+    let liNode = document.createElement("li");
+
+    liNode.appendChild(document.createTextNode(txtVal.value));
+
     listNode.appendChild(liNode);
   });
 }
