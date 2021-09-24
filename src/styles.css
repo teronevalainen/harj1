@@ -32,3 +32,6 @@ tbody tr:nth-child(even) {
 #menu-controls {
   color: green;
 }
+#add-comment {
+  color: orange;
+}

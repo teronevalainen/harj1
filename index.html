@@ -6,59 +6,58 @@
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="menu-layout" class="menu-layout"></div>
+    <header class="header">
+      <h1>MENU</h1>
+    </header>
+    <table id="menu-table" border="1">
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Meal 1</td>
+          <td>6,99€</td>
+        </tr>
+        <tr>
+          <td>Meal 2</td>
+          <td>14,89€</td>
+        </tr>
+        <tr>
+          <td>Meal 3</td>
+          <td>123€</td>
+        </tr>
+        <tr>
+          <td>Meal 4</td>
+          <td>5€</td>
+        </tr>
+        <tr>
+          <td>Meal 5</td>
+          <td>6,3€</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <div id="menu layout">
-      <header class="header">
-        <h1>MENU</h1>
-      </header>
-      <table id="menu-table" border="1">
-        <tbody>
-          <tr>
-            <th>Name</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td>Meal 1</td>
-            <td>6,99€</td>
-          </tr>
-          <tr>
-            <td>Meal 2</td>
-            <td>14,89€</td>
-          </tr>
-          <tr>
-            <td>Meal 3</td>
-            <td>123€</td>
-          </tr>
-          <tr>
-            <td>Meal 4</td>
-            <td>5€</td>
-          </tr>
-          <tr>
-            <td>Meal 5</td>
-            <td>6,3€</td>
-          </tr>
-        </tbody>
-      </table>
+    <main>
+      <ul id="lista">
+        <li>Meal 1</li>
+        <li>Meal 2</li>
+        <li>Meal 3</li>
+      </ul>
 
-      <main>
-        <ul id="lista">
-          <li>Meal 1</li>
-          <li>Meal 2</li>
-          <li>Meal 3</li>
-        </ul>
+      <div id="menu-controls">
+        <label for="teksti">New meal item</label>
+        <textarea name="teksti" id="teksti" cols="30" rows="10"></textarea>
+        <!--<input type="checkbox" name="comm"> this is very important item</input>-->
+        <button id="add-comment">add-comment</button>
+      </div>
+    </main>
 
-        <div id="menu-controls">
-          <label for="teksti">New meal item</label>
-          <textarea name="teksti" id="teksti" cols="30" rows="10"></textarea>
-          <!--<input type="checkbox" name="comm"> this is very important item</input>-->
-          <button id="add-comment">add-comment</button>
-        </div>
-      </main>
-      <header class="header">
-        <h2>Reviews</h2>
-      </header>
-    </div>
+    <header class="header">
+      <h2>Reviews</h2>
+    </header>
+
     <script src="src/index.js"></script>
   </body>
 </html>
