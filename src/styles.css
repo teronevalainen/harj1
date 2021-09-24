@@ -3,16 +3,18 @@ body {
   background-color: #c75959;
 }
 .header {
-  background-color: #f2f2f2;
+  background-color: gainsboro;
   font-style: italic;
   color: blue;
   padding-top: 40px;
+  padding-bottom: 10px;
 }
 #menu-table {
   text-align: left;
   background-color: #f2f2f2;
   color: rgb(92, 5, 5);
   padding-bottom: 10px;
+  padding-top: 40px;
 }
 tbody tr:nth-child(even) {
   background-color: gainsboro;
